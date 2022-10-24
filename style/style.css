@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #5f6472;
+}
+
+header {
+  padding: 28px 40px;
+}
+
+.logo {
+  width: 152px;
+  height: 30px;
+  text-indent: -999999px;
+  display: inline-block;
+}
+
+h1 {
+  background-image: url(../img/Logo.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 152px;
+  height: 30px;
+}
+
+main {
+  display: flex;
+  padding: 44px;
+}
+main .left {
+  width: 20%;
+}
+main .left h2 {
+  font-family: "Lato";
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #979797;
+  margin-bottom: 15px;
+}
+main .left a {
+  font-size: 16px;
+  color: #ffffff;
+}
+main .left li {
+  margin-bottom: 15px;
+}
+main .right {
+  background: linear-gradient(124.01deg, #2d3038 0%, rgba(45, 48, 56, 0) 100%);
+  border-radius: 30px;
+  padding: 30px 50px 250px;
+  width: 80%;
+}
+main .right h2 {
+  font-size: 64px;
+  color: #ffffff;
+}
+main .right h3 {
+  font-size: 16px;
+  color: #979797;
+  margin-bottom: 30px;
+}
+main .right p {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #979797;
+  margin-bottom: 10px;
+}
+main .right input {
+  background: #ffffff;
+  width: 320px;
+  height: 50px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+main .right h5 {
+  font-size: 34px;
+  color: #979797;
+}
+main .right label {
+  font-size: 56px;
+  color: #ffffff;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+
+.menu-icon span {
+  background-color: rgb(255, 255, 255);
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.menu-icon span:first-child {
+  top: 0;
+}
+
+.menu-icon span:nth-child(2) {
+  top: 6px;
+}
+
+.menu-icon span:last-child {
+  top: 12px;
+}
+
+.menu-icon:hover span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon:hover span:first-child,
+.menu-icon:hover span:last-child {
+  top: 6px;
+  background-color: #000000;
+}
+
+.menu-icon:hover span:first-child {
+  transform: rotate(45deg);
+}
+
+.menu-icon:hover span:last-child {
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .left {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  main .left li {
+    margin-bottom: 20px;
+  }
+  main .right {
+    display: none;
+    margin: auto;
+  }
+  main .right-deactive {
+    display: block;
+  }
+  .menu-icon {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
